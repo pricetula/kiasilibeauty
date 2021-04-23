@@ -1,8 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
+import App from '../component/layout/App';
 import '../styles/global.scss';
 
-class App extends React.Component {
+class AppMain extends React.Component {
   componentDidMount() {
     console.log('Started');
   }
@@ -20,10 +21,12 @@ class App extends React.Component {
             rel="stylesheet"
           />
         </Head>
-        <Component {...pageProps} />
+        <App>
+          <Component {...pageProps} />
+        </App>
       </>
     );
   }
 }
 
-export default App;
+export default AppMain;
