@@ -1,0 +1,9 @@
+@import "src/styles/base.scss";
+
+.wrapper {
+  @extend %flex-row-justify-center;
+  & > div {
+    width: 96%;
+    @include maxWidth(1240px)
+  }
+}

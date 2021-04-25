@@ -1,0 +1,10 @@
+@import "/src/styles/base.scss";
+
+.wrapper {
+  height: $nav-height;
+  background-color: $color-primary-dark-0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

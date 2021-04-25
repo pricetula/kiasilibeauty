@@ -1,0 +1,15 @@
+%background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%border-radius-rouded {
+  border-radius: 50%;
+}
+
+%avatar {
+  @extend %background-image;
+  @extend %border-radius-rouded;
+  @include boxy(48px);
+}

@@ -1,0 +1,123 @@
+@mixin shadow(
+  $lightenPercentage: 0%,
+  $horizontalOffset: 0px,
+  $verticalOffset: 0px,
+  $blurRadius: 0px,
+  $spreadRadius: 0px,
+) {
+  -webkit-box-shadow: pxToRem($horizontalOffset) pxToRem($verticalOffset) pxToRem($blurRadius) pxToRem($spreadRadius) lighten($dark-0, $lightenPercentage);
+  -moz-box-shadow: pxToRem($horizontalOffset) pxToRem($verticalOffset) pxToRem($blurRadius) pxToRem($spreadRadius) lighten($dark-0, $lightenPercentage);
+  box-shadow: pxToRem($horizontalOffset) pxToRem($verticalOffset) pxToRem($blurRadius) pxToRem($spreadRadius) lighten($dark-0, $lightenPercentage);
+}
+
+@mixin padding(
+  $value: 0px
+) {
+  padding: pxToRem($value);
+}
+
+@mixin padding-topBottom-leftRight(
+  $topBottom: 0px,
+  $leftRight: 0px,
+) {
+  padding: pxToRem($topBottom) pxToRem($leftRight);
+}
+
+@mixin padding-top-leftRight-bottom(
+  $top: 0px,
+  $leftRight: 0px,
+  $bottom: 0px,
+) {
+  padding: pxToRem($top) pxToRem($leftRight) pxToRem($bottom);
+}
+
+@mixin padding-top-right-bottom-left(
+  $top: 0px,
+  $right: 0px,
+  $bottom: 0px,
+  $left: 0px,
+) {
+  padding: pxToRem($top) pxToRem($right) pxToRem($bottom) pxToRem($left);
+}
+
+@mixin margin(
+  $value: 0px
+) {
+  margin: pxToRem($value);
+}
+
+@mixin margin-topBottom-leftRight(
+  $topBottom: 0px,
+  $leftRight: 0px,
+) {
+  margin: pxToRem($topBottom) pxToRem($leftRight);
+}
+
+@mixin margin-top-leftRight-bottom(
+  $top: 0px,
+  $leftRight: 0px,
+  $bottom: 0px,
+) {
+  margin: pxToRem($top) pxToRem($leftRight) pxToRem($bottom);
+}
+
+@mixin margin-top-right-bottom-left(
+  $top: 0px,
+  $right: 0px,
+  $bottom: 0px,
+  $left: 0px,
+) {
+  margin: pxToRem($top) pxToRem($right) pxToRem($bottom) pxToRem($left);
+}
+
+@mixin boxy(
+  $value: 0px
+) {
+  height: pxToRem($value);
+  width: pxToRem($value);
+}
+
+@mixin borderSolid(
+  $width: 0px,
+  $color: $dark-0,
+) {
+  border: solid $width $color;
+}
+
+@mixin fontSize($size: 20px) {
+  font-size:  pxToRem($size);
+}
+
+@mixin font(
+  $size: 16px,
+  $weight: 500,
+  $color: #0a2b93,
+) {
+  @include fontSize($size);
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin height($size: 0px) {
+  height: pxToRem($size);
+}
+
+@mixin width($size: 0px) {
+  width: pxToRem($size);
+}
+
+@mixin maxHeight($size: 0px) {
+  max-height: pxToRem($size);
+}
+
+@mixin maxWidth($size: 0px) {
+  max-width: pxToRem($size);
+}
+
+@mixin minHeight($size: 0px) {
+  min-height: pxToRem($size);
+}
+
+@mixin minWidth($size: 0px) {
+  min-width: pxToRem($size);
+}
