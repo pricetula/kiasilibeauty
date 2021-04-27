@@ -1,16 +1,14 @@
 @import "/src/styles/base.scss";
 
 .wrapper {
-  @extend %flex-row-align-center;
-  min-height: $nav-height;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
 }
 
 .logo {
-  @include left(-2px);
-  @include width(140px);
+  @include top(32px);
+  @include left(32px);
+  @include width(160px);
   position: relative;
 }

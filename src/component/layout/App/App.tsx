@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import style from './App.module.scss';
 
 interface AppProps {
   children: React.ReactNode
@@ -10,10 +9,8 @@ interface AppProps {
 const App = ({ children }: AppProps) => (
   <main>
     <Navbar />
-    <div className={style.bodyWrapper}>
-      {children}
-      <Footer />
-    </div>
+    {children}
+    <Footer />
   </main>
 );
 

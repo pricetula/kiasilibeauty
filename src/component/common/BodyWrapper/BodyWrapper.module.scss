@@ -1,0 +1,11 @@
+@import "/src/styles/base";
+
+.wrapper {
+  @extend %flex-row-justify-center;
+  width: 100%;
+
+  & > div {
+    width: 96%;
+    max-width: pxToRem(1440px);
+  }
+}

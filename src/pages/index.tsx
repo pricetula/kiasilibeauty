@@ -1,7 +1,3 @@
-import React from 'react';
+import Home from 'src/component/layout/Home';
 
-const f = () => (
-  <div>Hello three</div>
-);
-
-export default f;
+export default Home;
