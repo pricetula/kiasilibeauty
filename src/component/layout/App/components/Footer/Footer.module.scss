@@ -1,3 +1,6 @@
-.wrapper {
+@import "src/styles/base.scss";
 
+.wrapper {
+  @include height(200px);
+  background-color: $color-primary-light-0;
 }

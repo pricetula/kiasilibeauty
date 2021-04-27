@@ -106,6 +106,14 @@
   width: pxToRem($size);
 }
 
+@mixin left($size: 0px) {
+  left: pxToRem($size);
+}
+
+@mixin right($size: 0px) {
+  right: pxToRem($size);
+}
+
 @mixin maxHeight($size: 0px) {
   max-height: pxToRem($size);
 }

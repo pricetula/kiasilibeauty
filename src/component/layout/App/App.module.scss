@@ -3,4 +3,8 @@
 .bodyWrapper {
   min-height: 170vh;
   margin-top: $nav-height;
+
+  @include media('<tablet') {
+    background-color: red;
+  }
 }
