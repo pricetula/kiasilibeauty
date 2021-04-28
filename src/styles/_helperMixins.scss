@@ -90,8 +90,8 @@
 
 @mixin font(
   $size: 16px,
+  $color: black,
   $weight: 500,
-  $color: #0a2b93,
 ) {
   @include fontSize($size);
   font-weight: $weight;

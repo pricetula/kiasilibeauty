@@ -9,6 +9,9 @@
 .logo {
   @include top(32px);
   @include left(32px);
-  @include width(160px);
+  @include width(90px);
+  @include media('>=tablet') {
+    @include width(160px);
+  }
   position: relative;
 }

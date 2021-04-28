@@ -22,7 +22,7 @@ class AppMain extends React.Component {
           />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;900&family=Roboto:wght@900&family=Raleway:wght@200&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;900&family=Roboto:wght@900&family=Caveat&display=swap"
             rel="stylesheet"
           />
         </Head>
