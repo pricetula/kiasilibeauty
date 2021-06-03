@@ -4,7 +4,7 @@
   @extend %flex-column-align-center;
   height: 100vh;
   justify-content: center;
-  background-color: $color-primary-light-0;
+  background-color: $color-white;
 
   h1 {
     @include font(78px, black, bold);
