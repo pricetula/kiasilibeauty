@@ -19,6 +19,11 @@ class AppMain extends React.Component {
     return (
       <>
         <Head>
+          <title>kiasili natural beauty</title>
+          <meta
+            name="description"
+            content="Kiasili natural beauty products, good for skin care carrot oil and soaps."
+          />
           <link
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             rel="stylesheet"
